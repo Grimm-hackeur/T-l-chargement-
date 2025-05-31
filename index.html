@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>༒𝑨𝑹𝑪𝑯𝑨𝑵𝑮𝑬 𝑻𝑯𝑬𝑪☘︎</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141E30, #243B55, #141E30); /* Dégradé bleu foncé profond */
+            color: #00FFAA;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 10vw;
+            font-weight: bold;
+            color: #00FFAA;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 7vw;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 4vw;
+            margin: 10px 0;
+        }
+        .download-btn, .contact-links a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 20px;
+            background-color: #4B0082;
+            color: white;
+            font-size: 4vw;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        .download-btn:hover, .contact-links a:hover {
+            background-color: #6A0DAD;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        #counter {
+            font-size: 5vw;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .collaborators {
+            margin-top: 10px;
+            font-size: 4vw;
+            color: #FFD700; /* Or pour la mise en valeur */
+        }
+        .contact-links {
+            margin-top: 30px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 3.5vw;
+            border-top: 2px solid #4B0082;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">༒</div>
+        <h1>𝑨𝑹𝑪𝑯𝑨𝑵𝑮𝑬 𝑻𝑯𝑬𝑪☘︎</h1>
+        <p>CRÉE PAR 𝙕𝙀𝙋𝙃𝙔𝙍𓂀♱</p>
+        <a href="https://www.mediafire.com/file/54v3tz999a6p6vs/𝑨𝑹𝑪𝑯𝑨𝑵𝑮𝑬+-CRASH+V1.zip/file" class="download-btn" onclick="incrementCounter()">📥 Télécharger ARCHANGE-CRASH V1</a>
+        <div id="counter">Téléchargements : <span id="count">0</span></div>
+        <div class="collaborators">Collaborateurs : ASURA</div>
+        <div class="contact-links">
+            <p><a href="https://wa.me/50947118426" target="_blank">📞 Contacter le développeur</a></p>
+            <p><a href="https://whatsapp.com/channel/0029Vb5wOSKIt5rxdUGDxo0L" target="_blank">📢 Rejoindre la chaîne officielle</a></p>
+        </div>
+    </header>
+    <footer>&copy; 2025 ༒𝑨𝑹𝑪𝑯𝑨𝑵𝑮𝑬 𝑻𝑯𝑬𝑪☘︎. Tous droits réservés.</footer>
+    <script>
+        function incrementCounter() {
+            let count = localStorage.getItem('downloadCount') || 0;
+            count++;
+            localStorage.setItem('downloadCount', count);
+            document.getElementById('count').textContent = count;
+        }
+
+        window.onload = function() {
+            let count = localStorage.getItem('downloadCount') || 0;
+            document.getElementById('count').textContent = count;
+        }
+    </script>
+</body>
+</html>
